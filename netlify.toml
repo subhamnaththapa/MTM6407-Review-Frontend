@@ -1,0 +1,18 @@
+[build]
+  command = "npm install && npm run build"
+  functions = "frontend/.output/server"
+  publish = "frontend/.output/public"
+
+[build.environment]
+  NODE_VERSION = "18.x"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[context.production.environment]
+  STRAPI_URL = "https://your-strapi-app-name.onrender.com"
+
+[context.deploy-preview.environment]
+  STRAPI_URL = "https://your-strapi-app-name.onrender.com"

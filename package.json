@@ -1,0 +1,20 @@
+{
+  "name": "headless-reviews-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview"
+  },
+  "dependencies": {
+    "nuxt": "^3.0.0",
+    "axios": "^1.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.0",
+    "postcss": "^8.0.0",
+    "autoprefixer": "^10.0.0"
+  }
+}
